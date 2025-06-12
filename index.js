@@ -8,10 +8,12 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-const newStr = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5;
+// const newStr = s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5;
+const nameArr = [s1, s2, s3, s4, s5, s3, s2, s1, s4];
+nameArr.join("");
 
 // Print out the concatenated string
-console.log(newStr);
+console.log(nameArr.join(" "));
 
 /*******************************************
     Iteration 1.2 | Camel Tail
@@ -60,7 +62,7 @@ console.log(tip);
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-const randomNum = Math.floor(Math.random() * (10 + 1));
+const randomNum = Math.floor(Math.random() * 10) + 1;
 // Print the generated random number
 console.log(randomNum);
 
